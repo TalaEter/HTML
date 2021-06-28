@@ -4,14 +4,12 @@
   margin: 0;
   box-sizing: border-box;
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 p {
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
   color: black;
 }
 a {
-  font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
 }
 
@@ -23,7 +21,7 @@ a {
   padding: 20px 10px;
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
-  font-style: bold;
+  font-weight: bold;
 }
 .navigation-bar a {
   float: left;
@@ -42,20 +40,6 @@ a {
   background-color: #f6d601;
   border-radius: 50px;
 }
-/*
-.navigation-bar__right {
-  float: right;
-  padding-right: 10px;
-  font-weight: lighter;
-  font-size: 10px;
-}
-.navigation-bar__right a {
-  float: right;
-  padding-right: 10px;
-  font-weight: lighter;
-  font-size: 10px;
-  display: inline-table;
-}*/
 .navigation-bar__right {
   float: right;
   font-weight: lighter;
@@ -63,13 +47,12 @@ a {
   display: inline-table;
   padding: 10px;
 }
-
 .navigation-bar__right:hover {
   background-color: #f6d601;
   border-radius: 60px;
 }
 
-/********************************** FIRST BACKGROUND *************************************/
+/********************************** ABOUT CONTAINER *************************************/
 
 .about-container {
   background-image: url("/images/banner.jpg");
@@ -98,7 +81,6 @@ p.about-container__description {
   padding-top: 10px;
 }
 a.about-container__button {
-  float: 10px;
   font-size: 17px;
   color: black;
   background-color: #ffffff;
@@ -109,7 +91,7 @@ a.about-container__button {
   font-weight: bold;
 }
 
-/********************************** SECOND BACKGROUND *************************************/
+/********************************** CAR TYPES CONTAINER *************************************/
 
 .car-types-container {
   background-color: #ffffff;
@@ -144,4 +126,120 @@ span.car-types-container__cars-names {
   width: 31%;
   padding: 25px;
   outline: #f6d601 solid;
+}
+
+/********************************** FIND CAR CONTAINER *************************************/
+
+.find-car-container {
+  background-image: url("/images/bg.jpg");
+  height: 124vh;
+  background-size: cover;
+}
+.find-car-container__search-box {
+  position: relative;
+  float: right;
+  background-color: #ffffff;
+  color: #000000;
+  width: 35vw;
+  font-size: 25px;
+  height: 97vh;
+  right: 60px;
+  top: 100px;
+}
+.find-car-container__search-box__labels {
+  padding: 30px 30px 0;
+  display: block;
+  text-align: left;
+  width: max-content;
+}
+.find-car-container__search-box__input {
+  padding: 15px 0 15px 0;
+  width: 437px;
+  display: block;
+  text-align: left;
+  margin: 10px 30px 0;
+  border: solid 1px #acacac;
+  font-size: 18px;
+  color: #acacac;
+}
+.find-car-container__search-box__title {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 50px 0 30px;
+}
+.find-car-container__search-box__find {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 40px;
+  border: 1px solid black;
+  margin: 25px;
+  font-size: 20px;
+}
+.find-car-container__search-box__find:hover {
+  cursor: pointer;
+}
+
+/********************************** CALL NOW CONTAINER *************************************/
+
+.call-now-container {
+  background-color: #ffffff;
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 65px;
+}
+.call-now-container__header {
+  color: #000000;
+  text-transform: uppercase;
+}
+.call-now-container__phone-number {
+  padding: 10px;
+  color: #414141;
+  padding: 5px 0 35px;
+}
+.call-now-container__description {
+  padding: 10px;
+  color: #414141;
+}
+
+/********************************** WHY CHOOSE US CONTAINER *************************************/
+
+.choose-us-container {
+  background-color: #ffffff;
+  outline: #414141 solid 5px;
+  height: fit-content;
+  padding: 100px 0;
+}
+.choose-us-container__title {
+  text-transform: uppercase;
+  color: #414141;
+  font-weight: bold;
+  font-size: 50px;
+  padding: 0 0 30px;
+}
+.choose-us-container__description {
+  color: #414141;
+  font-size: 20px;
+  padding: 0 240px;
+}
+.choose-us-container__circle {
+  color: #ffffff;
+  background-color: #414141;
+  border: #f6d601 solid 5px;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  padding: 25px;
+  margin: 35px 50%;
+}
+
+/********************************** FOOTER *************************************/
+
+footer {
+  background-color: #414141;
+  color: #ffffff;
+  text-transform: capitalize;
+  padding: 25px;
+  font-size: 20px;
 }
