@@ -45,7 +45,7 @@ nav a.active {
   font-weight: lighter;
   font-size: 10px;
   display: inline-table;
-  padding: 9px;
+  padding: 1vw;
 }
 .nav__right:hover {
   background-color: #f6d601;
@@ -82,7 +82,7 @@ nav a.active {
   font-size: calc(0.5rem + 0.8vw); /*18px*/
   padding-right: 90px;
   padding-left: 90px;
-  padding-bottom: 102px;
+  padding-bottom: 13vh;
   padding-top: 10px;
 }
 .about-container a {
@@ -95,6 +95,12 @@ nav a.active {
   width: fit-content;
   text-decoration: none;
   font-weight: bold;
+}
+.about-container a:hover {
+  /*   background-color: #ffee7a; */
+  background-color: #272525;
+  color: #f6d601;
+  font-weight: 100;
 }
 
 /********************************** CAR TYPES CONTAINER *************************************/
@@ -122,39 +128,15 @@ nav a.active {
 .variety-container img {
   width: 30vw;
 }
-/* 
-
-.variety-container figure {
-  float: left;
-  width: 33.33%;
-  padding: 3%;
-  padding-top: 6%;
-}
-
-.variety-container div {
-  padding-bottom: 9%;
-}
-.variety-container .cars-names {
-  background-color: #f6d601;
-  font-weight: bold;
-  font-size: calc(1rem + 1vw); //30
-  display: inline-block;
-  width: 31%;
-  padding: 1.5% 1%;
-  outline: #f6d601 solid;
-}
-
-/* -------------------------------------------------------------------- */
-
 .variety-container .cars-names-flex {
   background-color: #f6d601;
   font-weight: bold;
   font-size: calc(1rem + 1vw); /*30px*/
   display: inline-block;
   display: inline-table;
-  width: 31%;
+  width: 100%;
   margin-top: 5%;
-  padding: 1.5% 13.5vw;
+  padding: 1.5%;
   outline: #f6d601 solid 10px;
   /* display: none; */
 }
@@ -174,12 +156,13 @@ nav a.active {
   display: flex;
   flex-direction: row;
   padding: 6% 0 9%;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   /* display: none; */
+  flex-wrap: nowrap;
 }
 
-/********************************** FIND CAR CONTAINER *************************************/
+/********************************** FIND CAR FORM CONTAINER *************************************/
 
 .form-container {
   background-image: url("../images/bg.jpg");
@@ -232,13 +215,17 @@ textarea {
 }
 .form-container input:hover {
   cursor: pointer;
+  cursor: pointer;
+  color: #f6d601;
+  background-color: #272525;
 }
 
 /********************************** WHY CHOOSE US CONTAINER *************************************/
 
 .choose-us-container {
   background-color: #ffffff;
-  outline: #414141 solid 5px;
+  /* outline: #414141 solid 5px; */
+  border-bottom: #414141 solid 5px;
   height: fit-content;
   /* padding: 100px 0; */
   padding-bottom: 10%;
@@ -307,7 +294,7 @@ footer {
 
 /********************************** MEDIA QUERIES MOBILE M *************************************/
 
-@media screen and (min-width: 375px) and (max-width: 425px) {
+@media screen and (max-width: 425px) {
   nav {
     background-color: #ffffff;
     overflow: auto;
@@ -316,7 +303,7 @@ footer {
   }
   nav a {
     text-align: right;
-    padding: 0;
+    padding: 1vw;
     font-size: 2.6vw;
     line-height: 15px;
   }
@@ -348,61 +335,53 @@ footer {
 
   .variety-container {
     background-size: cover;
-    height: 90vh;
+    height: 98vh;
   }
   .variety-container h2 {
     font-size: 10vw;
-    padding: 10% 2%;
+    padding: 6% 2%;
   }
   .variety-container h5 {
     font-size: 4vw;
     padding: 0 10% 2%;
   }
-  /* -------------------------------------------------------------------- */
-  .variety-container figure {
-    display: none;
-  }
 
-  .variety-container div {
-    display: none;
+  .variety-container img {
+    object-fit: contain;
+    width: 60vw;
+    height: 19vh;
   }
-  .variety-container .cars-names {
-    display: none;
-  }
-
-  /* -------------------------------------------------------------------- */
-
   .variety-container .cars-names-flex {
     background-color: #f6d601;
     font-weight: bold;
-    /*   font-size: calc(1rem + 1vw); //30px */
-    display: flex;
-    width: 31%;
-    margin-top: 5%;
-    padding: 1.5% 15vw;
+    font-size: calc(1rem + 1vw); /*30px*/
+    display: inline-block;
+    display: inline-table;
+    width: 100%;
+    margin-top: 0;
+    padding: 1.5%;
     outline: #f6d601 solid 10px;
-  }
-  .variety-container img {
-    width: 100vw;
-    /*   display: flex; */
+    /* display: none; */
   }
   .child-flex-hundai {
     order: 0;
-    /*   display: none; */
+    /* display: none; */
   }
   .child-flex-audi {
     order: 1;
-    /*   display: none; */
+    /* display: none; */
   }
   .child-flex-bmw {
     order: 2;
-    /*   display: none; */
+    /* display: none; */
   }
   .parent-flex {
     display: flex;
     flex-direction: column;
-    padding: 6% 3% 9%;
-    /*   display: none; */
+    padding: 6% 0 9%;
+    align-items: center;
+    /* display: none; */
+    /*   flex-wrap: nowrap; */
   }
 
   .form-container {
@@ -430,7 +409,7 @@ footer {
 
   .choose-us-container {
     outline: #414141 solid 5px;
-    height: 80vh;
+    height: 82vh;
   }
   .choose-us-container h2 {
     font-size: 10vw;
